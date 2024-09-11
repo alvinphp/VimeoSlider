@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+  <fieldset name="basic">
+
+    <field name="url"
+      type="url"
+      label="URL VIMEO"
+      description=""
+      size="10" />
+
+    <field name="image"
+      type="media"
+      label="IMAGE"
+      description=""
+      size="10" />
+
+    <field name="title"
+      type="text"
+      label="TITLE"
+      description=""
+      size="10" />
+
+    <field name="subtitle"
+      type="text"
+      label="SUBTITLE"
+      description=""
+      size="10" />
+
+  </fieldset>
+</form>

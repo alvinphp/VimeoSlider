@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/**
+ * @copyright	Copyright © 2024 - All rights reserved.
+ * @license		GNU General Public License v2.0
+   Developer: Alvin Gil Saldaña
+ */
+-->
+<extension type="module" method="upgrade" client="site">
+	<name>MOD_VIMEOSLIDER</name>
+	<creationDate>Sep 2024</creationDate>
+	<author>alvin gil sadaña</author>
+	<authorEmail>alvin_gil@hotmail.com</authorEmail>
+	<authorUrl>https://github.com/alvinalvin</authorUrl>
+	<copyright>Copyright © 2024 - All rights reserved.</copyright>
+	<license>GNU General Public License v2.0</license>
+	<version>1.0.0</version>
+	<description>MOD__P_SLIDER_VIMEO__P_</description>
+	<files>
+		<filename module="mod_vimeoslider">mod_vimeoslider.php</filename>
+		<filename>mod_vimeoslider.xml</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>form</folder>
+	</files>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<fieldset name="basic">
+
+				<field
+					name="video"
+					type="subform"
+					multiple="true"
+					formsource="modules/mod_vimeoslider/form/video.xml"
+					label="VIDEO OPTION"
+					description=""
+					/>
+				<field name="stylelayout" type="radio" default="0" label="STYLE LAYOUT" description="" class="btn-group">
+	        <option value="0">VERTICAL</option>
+	        <option value="1">HORIZONTAL</option>
+	      </field>
+
+				<field name="theme" type="radio" default="0" label="THEME" description="" class="btn-group">
+					<option value="0">rvs-black</option>
+					<option value="1">rvs-light</option>
+				</field>
+
+				<field name="colorbottonlayout" type="list" default="4" required="true" label="BOTTON LIST LAYOUT" description="">
+          <option value="">Please Select</option>
+          <option value="0">rvs-blue-highlight</option>
+          <option value="1">rvs-green-highlight</option>
+					<option value="2">rvs-orange-highlight</option>
+					<option value="3">rvs-red-highlight</option>
+					<option value="4">rvs-purple-highlight</option>
+       </field>
+
+
+
+
+				</fieldset>
+			</fieldset>
+
+
+
+
+
+
+
+
+
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+</fields>
+
+
+	</config>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_vimeoslider.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_vimeoslider.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_vimeoslider.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_vimeoslider.ini</language>
+	</languages>
+</extension>
