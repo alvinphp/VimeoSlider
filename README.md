@@ -36,7 +36,7 @@
 
 <h3> Change Log</h3>
 
-<h4>Version [1.0.0] - 2023-11-15</h4>
+<h4>Version [1.0.0] - 2024-19-10</h4>
 
 <ul>
 <li><b>[Added]</b>Adding module for Joomla in its first version
