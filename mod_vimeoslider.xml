@@ -123,6 +123,6 @@
 		<language tag="ru-RU">ru-RU/ru-RU.mod_vimeoslider.ini</language>
 	</languages>
 	<updateservers>
-	  <server type="extension" name="MOD_DARKMODETOGGLE">https://alvinphp.github.io/server-/video.xml</server>
+	  <server type="extension" name="MOD_VIMEOSLIDER">https://alvinphp.github.io/server-/vimeo.xml</server>
  </updateservers>
 </extension>
